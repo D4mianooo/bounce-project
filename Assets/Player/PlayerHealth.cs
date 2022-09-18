@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using LootLocker.Requests;
 
 public class PlayerHealth : MonoBehaviour
 {
     [SerializeField] private int health = 3;
+
 
     public bool IsPlayerAlive(){
         

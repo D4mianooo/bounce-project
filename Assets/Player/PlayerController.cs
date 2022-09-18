@@ -6,9 +6,9 @@ public class PlayerController : MonoBehaviour{
     
     [SerializeField] private Rigidbody _rigidbody;
     [SerializeField] private CapsuleCollider _collider;
-    [SerializeField][Range(0f,5f)] private float _playerSpeed = 3f;
-    [SerializeField]private float _jumpForce = 5f;
-    [SerializeField]private float _gravityScale = 5f;
+    [SerializeField] private float _playerSpeed = 3f;
+    [SerializeField] private float _jumpForce = 5f;
+    [SerializeField] private float _gravityScale = 5f;
     
     
     private Vector3 _verticalRelativeInput;
@@ -32,7 +32,6 @@ public class PlayerController : MonoBehaviour{
         
         ProcessRelativeInput();
         
-        _rigidbody.velocity = _verticalRelativeInput + _horizontalRelativeInput;
         
     }
     
@@ -40,6 +39,7 @@ public class PlayerController : MonoBehaviour{
         
         ProcessGravity();
         ProcessJump();
+        _rigidbody.velocity = _verticalRelativeInput + _horizontalRelativeInput;
         
     }
     private static void SetCursorVisibility(){

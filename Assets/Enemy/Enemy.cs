@@ -5,10 +5,12 @@ using UnityEngine;
 public class Enemy : MonoBehaviour{
 
     private HealthUI healthUI;
+    private DiedUI diedUI;
     
     private void Awake() {
         
         healthUI = GameObject.FindObjectOfType<HealthUI>();
+        diedUI = GameObject.FindObjectOfType<DiedUI>();
         
     }
 
@@ -23,14 +25,7 @@ public class Enemy : MonoBehaviour{
         
         healthUI.UpdateHeartContainer();
         
-        if(!playerHealth.IsPlayerAlive()){
-            Debug.Log("Player is dead");
-            //TODO: Pause game, Show score
-        }
-        
     }
-    
-    
     
 
 }
