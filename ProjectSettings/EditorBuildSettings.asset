@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Gamepley.unity
     guid: 7bb99342cadbf9147ace1d1b53ea6bb4
+  - enabled: 1
+    path: Assets/Scenes/Leaderboard.unity
+    guid: a49fe3692615887448c0d2c3442d1e00
   m_configObjects: {}

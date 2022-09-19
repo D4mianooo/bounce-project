@@ -371,7 +371,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000015259, y: 0.0004425}
+  m_AnchoredPosition: {x: -0.0025782, y: 292.79}
   m_SizeDelta: {x: 913.845, y: 475.277}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &120252950
@@ -403,8 +403,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -686,8 +686,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 228.46, y: -181.89}
-  m_SizeDelta: {x: 456.92, y: 111.503}
+  m_AnchoredPosition: {x: 252.70102, y: -181.89}
+  m_SizeDelta: {x: 505.402, y: 111.503}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &511914079
 MonoBehaviour:
@@ -710,7 +710,7 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0, g: 0, b: 0, a: 1}
+    m_NormalColor: {r: 0, g: 0, b: 0, a: 0}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -732,7 +732,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 511914080}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1975673837}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: LoadLeaderboardScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &511914080
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -837,8 +849,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1376,7 +1388,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 0.16037738, g: 0.12784801, b: 0.12784801, a: 0.59607846}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1500,7 +1512,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 792116224}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
@@ -1515,8 +1527,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Enter Nickname
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 2fd7908657eae16498ecf0996630b431, type: 2}
-  m_sharedMaterial: {fileID: -7009096416440459556, guid: 2fd7908657eae16498ecf0996630b431, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: da8930bbda4d0ed43a863d0474b81301, type: 2}
+  m_sharedMaterial: {fileID: -5812479682357035465, guid: da8930bbda4d0ed43a863d0474b81301, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1791,7 +1803,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -456.92, y: 292.79}
+  m_AnchoredPosition: {x: -456.92, y: 56.354}
   m_SizeDelta: {x: 913.84, y: 110.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1203296491
@@ -1880,7 +1892,7 @@ MonoBehaviour:
   m_CaretColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
   m_CustomCaretColor: 0
   m_SelectionColor: {r: 0.65882355, g: 0.80784315, b: 1, a: 0.7529412}
-  m_Text: 131232132131
+  m_Text: 
   m_CaretBlinkRate: 0.85
   m_CaretWidth: 1
   m_ReadOnly: 0
@@ -2041,7 +2053,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: LADEBOARD
+  m_text: LEADEBOARD
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: da8930bbda4d0ed43a863d0474b81301, type: 2}
   m_sharedMaterial: {fileID: -5812479682357035465, guid: da8930bbda4d0ed43a863d0474b81301, type: 2}
@@ -2435,7 +2447,7 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0, g: 0, b: 0, a: 1}
+    m_NormalColor: {r: 0, g: 0, b: 0, a: 0}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -2640,10 +2652,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "131232132131\u200B"
+  m_text: "\u200B"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 2fd7908657eae16498ecf0996630b431, type: 2}
-  m_sharedMaterial: {fileID: -7009096416440459556, guid: 2fd7908657eae16498ecf0996630b431, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: da8930bbda4d0ed43a863d0474b81301, type: 2}
+  m_sharedMaterial: {fileID: -5812479682357035465, guid: da8930bbda4d0ed43a863d0474b81301, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2953,7 +2965,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 354.204, y: 292.19}
+  m_AnchoredPosition: {x: 354.2, y: 55.752}
   m_SizeDelta: {x: 708.407, y: 111.503}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2074216743
@@ -3003,7 +3015,7 @@ MonoBehaviour:
       - m_Target: {fileID: 7533122340660251700}
         m_TargetAssemblyTypeName: Score, Assembly-CSharp
         m_MethodName: AddPlayerScoreToLeaderboard
-        m_Mode: 5
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -3470,9 +3482,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7533122339408932816, guid: f83abc452c71b52468b8626f67c3bb75, type: 3}
       propertyPath: m_text
-      value: '0
-
-'
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7533122339408932816, guid: f83abc452c71b52468b8626f67c3bb75, type: 3}
       propertyPath: m_fontSize

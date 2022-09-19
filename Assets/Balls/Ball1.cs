@@ -54,8 +54,7 @@ public class Ball1 : MonoBehaviour
 
         BounceEnemyOfAnObject(collision);
     }
-
-
+    
     private void BounceEnemyOfAnObject(Collision collisionInfo)
     {
         var bouncingSpeed = lastVelocity.magnitude;

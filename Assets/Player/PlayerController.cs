@@ -26,7 +26,7 @@ public class PlayerController : MonoBehaviour{
     
     private void Update(){
         
-        SetCursorVisibility();
+        SetCursor();
         
         GetUserAxisInput();
         
@@ -42,16 +42,10 @@ public class PlayerController : MonoBehaviour{
         _rigidbody.velocity = _verticalRelativeInput + _horizontalRelativeInput;
         
     }
-    private static void SetCursorVisibility(){
+    private static void SetCursor(){
         if (Input.GetKey(KeyCode.Escape)){
-            
             Cursor.visible = true;
-            
-        }
-        if (Input.GetKey(KeyCode.Mouse0)){
-            
-            Cursor.visible = false;
-            
+            Cursor.lockState = CursorLockMode.None;
         }
     }
 

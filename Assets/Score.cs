@@ -29,12 +29,25 @@ public class Score : MonoBehaviour{
     }
     
     public static void AddPlayerScoreToLeaderboard(){
-        string memberID = GameObject.FindGameObjectWithTag("Nickname").GetComponent<TMP_InputField>().text;
+        
+        string nickname = GameObject.FindGameObjectWithTag("Nickname").GetComponent<TMP_InputField>().text;
         const int leaderboardID = 7127;
         int score = (int)Time.timeSinceLevelLoad;
         
-        LootLockerSDKManager.SubmitScore(memberID, score, leaderboardID, (response) =>
+        SetPlayerNick(nickname.Length > 0 ? nickname : "Unknown");
+        
+        LootLockerSDKManager.SubmitScore(nickname, score, leaderboardID,(response) =>
         {
+            if (response.statusCode == 200) {
+                Debug.Log("Successful");
+            } else {
+                Debug.Log("failed: " + response.Error);
+            }
+        });
+        GameManager.LoadMenuScene();
+    }
+    private static void SetPlayerNick(string nickname){
+        LootLockerSDKManager.SetPlayerName(nickname, (response)=>{
             if (response.statusCode == 200) {
                 Debug.Log("Successful");
             } else {
