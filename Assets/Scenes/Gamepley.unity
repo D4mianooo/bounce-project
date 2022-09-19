@@ -1766,7 +1766,7 @@ MonoBehaviour:
   balls: []
   numberOfBallsToSpawn: 5
   spawnNextBallAfter: 10
-  spawnFirstBallAfter: 0.1
+  spawnFirstBallAfter: 1
 --- !u!1 &1203296489
 GameObject:
   m_ObjectHideFlags: 0

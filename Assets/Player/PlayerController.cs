@@ -47,6 +47,9 @@ public class PlayerController : MonoBehaviour{
             Cursor.visible = true;
             Cursor.lockState = CursorLockMode.None;
         }
+        if (Input.GetKey(KeyCode.Mouse0)){
+            Cursor.visible = false;
+        }
     }
 
     private void GetUserAxisInput(){
